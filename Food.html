@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Food Order</title>
+    
+        
+
+    
+
+    <h1>🍽️Food Menu</h1>
+    <h2>Breakfast Foods:🍛</h2>
+   
+    <img src="idly.jpg">
+    <h3 class="item3" >Idly- ₹10</h3>
+    <button class="one" onclick="calculate('idly')">+</button>
+    <button class="a" onclick="calculate1('idly')">-</button>
+    
+    
+    <img src="dosa copy.jpg">
+    <h3 class="item4" >Dosa- ₹30</h3>
+    <button class="two" onclick="calculate('dosa')" >+</button>
+    <button class="b" onclick="calculate1('dosa')" >-</button>
+
+    <img src="pongal.jpg">
+    <h3 class="item5" >Pongal- ₹40</h3>
+    <button class="three" onclick="calculate('pongal')">+</button>
+    <button class="c" onclick="calculate1('pongal')">-</button>
+
+    <img src="poori.jpg">
+    <h3 class="item6" >Poori- ₹50</h3>
+    <button class="four"  onclick="calculate('poori')">+</button>
+    <button class="d"  onclick="calculate1('poori')">-</button>
+
+
+    <img src="uppuma.jpg">
+    <h3 class="item7">Uppuma- ₹35</h3>
+    <button class="five" onclick="calculate('uppuma')">+</button>
+     <button class="e" onclick="calculate1('uppuma')">-</button><br><br><br><br><br><br>
+
+
+
+
+    <h2>Lunch Foods:🍗</h2>
+    <img src="chicken b.jpg">
+    <h3 class="item8">Chicken Briyani- ₹120</h3>
+    <button class="i" onclick="calculate('chicken Briyani')">+</button>
+    <button class="f" onclick="calculate1('chicken Briyani')">-</button>
+
+
+    <img src="veg meals.jpg">
+    <h3 class="item9">Veg Meals- ₹110</h3>
+    <button class="ii" onclick="calculate('veg Meals')" >+</button>
+     <button class="g" onclick="calculate1('veg Meals')" >-</button>
+
+
+    <img src="fish.jpg">
+    <h3 class="item10" >Fish Rise- ₹150</h3>
+    <button class="iii" onclick="calculate('Fish Rise')">+</button>
+    <button class="h" onclick="calculate1('Fish Rise')">-</button>
+
+    <img src="mutton b.jpg">
+    <h3 class="item11" >Mutton Briyani- ₹180</h3>
+    <button class="iv" onclick="calculate('Mutton Biriyani')">+</button>
+    <button class="j" onclick="calculate1('Mutton Biriyani')">-</button>
+
+    <img src="curd rise.jpg">
+    <h3 class="item12" >Curd Rise- ₹50</h3>
+    <button class="v" onclick="calculate('Curd Rise')">+</button>
+    <button class="k" onclick="calculate1('Curd Rise')">-</button><br><br><br><br><br><br>
+ 
+    <h2>Dinner Foods:🍜</h2>
+    <img src="chicken rise.jpg">
+    <h3 class="item13" >chicken Rise- ₹130</h3>
+     <button class="vi"onclick="calculate('Chicken Rise')">+</button>
+     <button class="l"onclick="calculate1('Chicken Rise')">-</button>
+
+    <img src="veg rise.jpg">
+     <h3 class="item14" >Veg Rise- ₹100</h3>
+     <button class="vii" onclick="calculate('Veg Rise')">+</button>
+     <button class="m" onclick="calculate1('Veg Rise')">-</button>
+
+    <img src="parota.jpg">
+     <h3 class="item15" >Parota- ₹50</h3>
+     <button class="viii" onclick="calculate('Parota')">+</button>
+    <button class="n" onclick="calculate1('Parota')">-</button>
+    
+    <img src="noodles.jpg">
+     <h3 class="item16" >Noodles- ₹80</h3>
+     <button class="ix" onclick="calculate('noodles')">+</button>
+     <button class="o" onclick="calculate1('noodles')">-</button>
+
+
+    <img src="k porota.jpg">
+     <h3 class="item17" >Egg Parota- ₹90</h3>
+     <button class="x" onclick="calculate('Egg Parota')">+</button>
+     <button class="p" onclick="calculate1('Egg Parota')">-</button>
+     <br><br><br><br><br><br>
+
+
+
+
+     <h1>Total Price: ₹<span id="total">0</span></h1>
+
+
+    </div>
+    <style>
+               
+        body{
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+        }
+        h1{
+            text-align: center;
+        }
+        .item3{
+            position: absolute;
+            left: 90px;
+            bottom: 330px;
+        }
+        .item4{
+            position: absolute;
+            left: 360px;
+            bottom: 330px;
+        }
+        .item5{
+            position: absolute;
+            left: 630px;
+            bottom: 330px;
+        }
+        .item6{
+            position: absolute;
+            left: 900px;
+            bottom: 330px;
+        }
+        .item7{
+            position: absolute;
+            left: 1170px;
+            bottom: 330px;  
+        }
+        .item8{
+            position: absolute;
+            left: 70px;
+            bottom: -30px;
+        }
+        .item9{
+            position: absolute;
+            left: 360px;
+            bottom: -30px;
+        }
+        .item10{
+            position: absolute;
+            left: 630px;
+            bottom: -30px;
+        }
+        .item11{
+            position: absolute;
+            left: 920px;
+            bottom: -30px;
+        }
+        .item12{
+            position: absolute;
+            left: 1270px;
+            bottom:-30px;
+        }
+        .item13{
+            position: absolute;
+            left: 90px;
+            bottom: -390px;
+        }
+        .item14{
+            position: absolute;
+            left: 360px;
+            bottom: -390px;
+        }
+        .item15{
+            position: absolute;
+            left: 630px;
+            bottom: -390px;
+        }
+        .item16{
+            position: absolute;
+            left: 920px;
+            bottom: -390px;
+        }
+        .item17{
+            position: absolute;
+            left: 1170px;
+            bottom: -390px;
+        }
+        .one{
+            position: absolute;
+            left: 180px;
+            bottom: 350px;
+        }
+        .two{
+            position: absolute;
+            left: 450px;
+            bottom: 350px;
+        }
+        .three{
+            position: absolute;
+            left: 750px;
+            bottom: 350px;
+        }
+        .four{
+            position: absolute;
+            left: 1000px;
+            bottom: 350px;
+        }
+        .five{
+            position: absolute;
+            left: 1300px;
+            bottom: 350px;
+        }
+        .i{
+             position: absolute;
+            left: 250px;
+            bottom: -10px;
+        }
+        .ii{
+            position: absolute;
+            left: 520px;
+            bottom: -10px;
+        }
+        .iii{
+            position: absolute;
+            left: 760px;
+            bottom: -10px;
+        }
+        .iv{
+            position: absolute;
+            left: 1100px;
+            bottom: -10px;
+        }
+        .v{
+            position: absolute;
+            left: 1400px;
+            bottom: -10px;
+        } 
+        .vi {
+            position: absolute;
+            left: 250px;
+            bottom: -370px;
+        }
+        .vii{
+            position: absolute;
+            left: 500px;
+            bottom: -370px;
+        }
+        .viii{
+            position: absolute;
+            left: 730px;
+            bottom: -370px;
+        }
+        .ix{
+            position: absolute;
+            left: 1040px;
+            bottom: -370px;
+        } 
+        .x{
+            position: absolute;
+            left: 1310px;
+            bottom: -370px;    
+        }
+        .a{
+           position: absolute;
+           left:50px;
+           bottom:350px;
+        }
+        .b{
+           position: absolute;
+           left:330px;
+           bottom:350px;
+        }
+        .c{
+           position: absolute;
+           left:600px;
+           bottom:350px;
+        }
+        
+        .d{
+           position: absolute;
+           left:870px;
+           bottom:350px;
+        }
+        .e{
+           position: absolute;
+           left:1130px;
+           bottom:350px;
+        }
+        .f{
+          position: absolute;
+            left: 30px;
+            bottom: -10px;
+        }
+        .g{
+         position: absolute;
+            left: 330px;
+            bottom: -10px;
+        }
+        .h{
+          position: absolute;
+            left: 600px;
+            bottom: -10px;
+        }
+        .j{
+           position: absolute;
+            left: 900px;
+            bottom: -10px;
+        }
+        .k{
+           position: absolute;
+            left: 1250px;
+            bottom: -10px;
+        }
+        .l{
+           position: absolute;
+            left: 70px;
+            bottom: -370px;
+        }
+        .m{
+           position: absolute;
+            left: 330px;
+            bottom: -370px;
+        }
+        .n{
+           position: absolute;
+            left: 590px;
+            bottom: -370px;
+        }
+        .o{
+           position: absolute;
+            left: 870px;
+            bottom: -370px;
+        }
+        .p{
+            position: absolute;
+            left: 1130px;
+            bottom: -370px;
+        
+        }
+        .bill {
+            margin-top: 20px;
+            background: white;
+            display: inline-block;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: left;
+            min-width: 250px;
+        }
+
+        .bill h3 {
+            text-align: center;
+        }
+
+        .total {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        
+    
+    </style>
+    
+        <script>
+         
+let total = 0;
+ let cart = {};
+
+    function addItem(name, price) {
+        if (cart[name]) {
+            cart[name].qty++;
+        } else {
+            cart[name] = { price: price, qty: 1 };
+        }
+        total += price;
+        updateBill();
+    }
+
+    function removeItem(name, price) {
+        if (cart[name] && cart[name].qty > 0) {
+            cart[name].qty--;
+            total -= price;
+
+            if (cart[name].qty === 0) {
+                delete cart[name];
+            }
+        }
+        updateBill();
+    }
+
+    function updateBill() {
+        let billHTML = "";
+
+        for (let item in cart) {
+            billHTML += item + " x " + cart[item].qty +
+                        " = ₹" + (cart[item].qty * cart[item].price) + "<br>";
+        }
+
+        document.getElementById("billItems").innerHTML = billHTML;
+        document.getElementById("total").innerText = total;
+    }
+
+    function resetBill() {
+        cart = {};
+        total = 0;
+        updateBill();
+    }
+
+function calculate(item) {
+
+    if (item === 'idly') {
+        total +=  10;
+    } 
+    else if (item === 'dosa') {
+        total += 30;
+    } 
+    else if (item === 'pongal') {
+        total += 40;
+    } 
+    else if (item === 'poori') {
+        total += 50;
+    } 
+    else if(item ==='uppuma'){
+        total +=35;
+    }
+    else if (item === 'chicken Briyani') {
+        total +=120 ;
+    } 
+    else if (item === 'veg Meals') {
+        total +=110;
+    } 
+    else if (item === 'Fish Rise') {
+        total +=150;
+    } 
+    else if (item === 'Mutton Biriyani') {
+        total +=180;
+    } 
+    else if(item ==='Curd Rise'){
+        total +=50;
+    }
+    else if (item === 'Chicken Rise') {
+        total +=130;
+    } 
+    else if (item === 'Veg Rise') {
+        total +=100;
+    } 
+    else if (item === 'Parota') {
+        total +=50;
+    } 
+    else if (item === 'noodles') {
+        total += 80;
+    } 
+    else if(item ==='Egg Parota'){
+        total +=90;
+    }
+
+    
+    document.getElementById("total").innerText = total;
+}
+
+
+    function calculate1(item) {
+
+    if (item === 'idly') {
+        total -=  10;
+
+    } 
+    else if (item === 'dosa') {
+        total -= 30;
+    } 
+    else if (item === 'pongal') {
+        total -= 40;
+    } 
+    else if (item === 'poori') {
+        total -= 50;
+    } 
+    else if(item ==='uppuma'){
+        total -=35;
+    }
+    else if (item === 'chicken Briyani') {
+        total -=120 ;
+    } 
+    else if (item === 'veg Meals') {
+        total -=110;
+    } 
+    else if (item === 'Fish Rise') {
+        total -=150;
+    } 
+    else if (item === 'Mutton Biriyani') {
+        total -=180;
+    } 
+    else if(item ==='Curd Rise'){
+        total -=50;
+    }
+    else if (item === 'Chicken Rise') {
+        total -=130;
+    } 
+    else if (item === 'Veg Rise') {
+        total -=100;
+    } 
+    else if (item === 'Parota') {
+        total -=50;
+    } 
+    else if (item === 'noodles') {
+        total -= 80;
+    } 
+    else if(item ==='Egg Parota'){
+        total -=90;
+    }
+
+
+
+
+
+
+    
+
+    document.getElementById("total").innerText = total;
+}
+
+        
+          
+
+
+
+        
+    
+    
+
+    
+</script>
+    
+
+    
+  

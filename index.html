@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Food Bill</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <h2>🍽 Food Menu</h2>
+<h2>Breakfast Foods:🍛</h2>
+
+<div class="menu">
+
+    <div class="item">
+        <img src="idly.jpg">
+        <h3>Idly</h3>
+        <p>₹10</p>
+        <button onclick="addItem('Idly',10)">+</button>
+        <button onclick="removeItem('Idly',10)">-</button>
+    </div>
+
+    <div class="item">
+        <img src="dosa copy.jpg">
+        <h3>Dosa</h3>
+        <p>₹30</p>
+        <button onclick="addItem('Dosa',30)">+</button>
+        <button onclick="removeItem('Dosa',30)">-</button>
+    </div>
+
+    <div class="item">
+        <img src="pongal.jpg">
+        <h3>Pongal</h3>
+        <p>₹40</p>
+        <button onclick="addItem('Pongal',40)">+</button>
+        <button onclick="removeItem('Pongal',40)">-</button>
+    </div>
+
+    <div class="item">
+        <img src="poori.jpg">
+        <h3>Poori</h3>
+        <p>₹50</p>
+        <button onclick="addItem('Poori',50)">+</button>
+        <button onclick="removeItem('Poori',50)">-</button>
+    </div>
+
+    <div class="item">
+        <img src="uppuma.jpg">
+        <h3>Uppuma</h3>
+        <p>₹35</p>
+        <button onclick="addItem('Uppuma',35)">+</button>
+        <button onclick="removeItem('Uppuma',35)">-</button>
+    
+        </div>
+        </div>
+    
+
+    <h2>Lunch Foods:🍗</h2>
+    <div class="menu">
+
+    <div class="item">
+        <img src="chicken b.jpg">
+        <h3>Chicken Biriyani</h3>
+        <p>₹120</p>
+        <button onclick="addItem('Chicken Biriyani',120)">+</button>
+        <button onclick="removeItem('Chicken Biriyani',120)">-</button>
+    </div>
+
+    <div class="item">
+        <img src="veg meals.jpg">
+        <h3>Veg Meals</h3>
+        <p>₹110</p>
+        <button onclick="addItem('Veg Meals',110)">+</button>
+        <button onclick="removeItem('Veg Meals',110)">-</button>
+    </div>
+
+    <div class="item">
+        <img src="fish.jpg">
+        <h3>Fish Rise</h3>
+        <p>₹150</p>
+        <button onclick="addItem('Fish Rise',150)">+</button>
+        <button onclick="removeItem('Fish Rise',150)">-</button>
+    </div>
+
+    <div class="item">
+        <img src="mutton b.jpg">
+        <h3>Mutton Biriyani</h3>
+        <p>₹180</p>
+        <button onclick="addItem('Mutton Biriyani',180)">+</button>
+        <button onclick="removeItem('Mutton Biriyani',180)">-</button>
+    </div>
+
+    <div class="item">
+        <img src="curd rise.jpg">
+        <h3>Curd Rise</h3>
+        <p>₹50</p>
+        <button onclick="addItem('Curd Rise',50)">+</button>
+        <button onclick="removeItem('Curd Rise',50)">-</button>
+    </div>
+    </div>
+    
+    <h2>Dinner Foods:🍜</h2>
+    <div class="menu">
+    <div class="item">
+        <img src="chicken rise.jpg">
+        <h3>Chicken Rise</h3>
+        <p>₹130</p>
+        <button onclick="addItem('Chicken Rise',130)">+</button>
+        <button onclick="removeItem('Chicken Rise',130)">-</button>
+    </div>
+
+    <div class="item">
+        <img src="veg rise.jpg">
+        <h3>Veg Rise</h3>
+        <p>₹100</p>
+        <button onclick="addItem('Veg Rise',100)">+</button>
+        <button onclick="removeItem('Veg Rise',100)">-</button>
+    </div>
+
+    <div class="item">
+        <img src="parota.jpg">
+        <h3>Parota</h3>
+        <p>₹50</p>
+        <button onclick="addItem('Parota',50)">+</button>
+        <button onclick="removeItem('Parota',50)">-</button>
+    </div>
+
+    <div class="item">
+        <img src="noodles.jpg">
+        <h3>Noodles</h3>
+        <p>₹80</p>
+        <button onclick="addItem('Noodles',80)">+</button>
+        <button onclick="removeItem('Noodles',80)">-</button>
+    </div>
+
+    <div class="item">
+        <img src="k porota.jpg">
+        <h3>Egg Parota</h3>
+        <p>₹90</p>
+        <button onclick="addItem('Egg Parota',90)">+</button>
+        <button onclick="removeItem('Egg Parota',90)">-</button>
+    </div>
+</div>
+</div>
+
+
+<div class="bill">
+    <h3>🧾 Bill</h3>
+    <div id="billItems"></div>
+    <div class="total">Total: ₹ <span id="total">0</span></div>
+    <br>
+    <button onclick="resetBill()">Reset</button>
+    <button onclick="showSuccess()">OK</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

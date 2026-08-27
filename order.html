@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price check</title>
+    <style>
+    body{
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+        }
+        </style>
+</head>
+<body>
+    <label> Number of Idly:</label>
+    <input type="number" id="idly" min="1" ><br><br>
+      
+
+    <button onclick="calculate()">Check price</button>
+    <h3 id="total"></h3>
+
+    <label> Number of Dosa:</label>
+    <input type="number" id="dosa" min="1" ><br><br>
+
+    <button onclick="calculate1()">Check price</button>
+    <h3 id="total1"></h3>
+
+    <label> Number of Pongal:</label>
+    <input type="number" id="pongal" min="1"><br><br>
+
+    <button onclick="calculate2()">Check price</button>
+    <h3 id="total2"></h3>
+
+
+
+
+    <script>
+        function calculate(){
+             let price=10;
+            let idly=document.getElementById("idly").value;
+            let total = price * idly;
+            document.getElementById("total").innerHTML = 
+    "Total Price: ₹" + total;
+        }
+        
+
+
+         function calculate1(){
+            let price=30;
+            let dosa=document.getElementById("dosa").value;   
+            let total1 = price * dosa;
+            document.getElementById("total1").innerHTML = 
+    "Total Price: ₹" + total1;
+        }
+
+        function calculate2(){
+            let price=40;
+            let pongal=document.getElementById("pongal").value;
+            let total2= price*pongal;
+            document.getElementById("total2").innerHTML=
+            "Total Price: ₹" + total2;
+        }
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body{
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+        }
+        h2{
+            text-align: center;
+        }
+        div{
+            background: linear-gradient(45deg, #f6d987, #e49253, #e35b98);
+            height: 700px;
+            width: 400px;
+            text-align: justify;
+            position: absolute;
+            right: 500px;
+            left: 600px;
+        }
+        .item1{
+            text-align: right;
+        }
+        .item2{
+            position: absolute;
+            right: 45%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    
+        <h2> 🏨Hotel Food Order Login</h2>
+
+     <label>Your Name:   <input type="text" placeholder="username"></label>
+     <br><br>
+     <label>Password:   <input type="password" placeholder="password"></label>
+
+    <p class="item1">Forget Password?</p>
+
+    <button class="item2" onclick="goNext()">Login </button>
+
+    <script>
+        function goNext(){
+            window.location.href="food.html";
+        }
+    </script>
+
+    </div>
+    
+</body>
+</html>
